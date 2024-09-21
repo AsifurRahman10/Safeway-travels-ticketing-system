@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeWay Bus ticket</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/6327d2102b.js" crossorigin="anonymous"></script>
+    <!-- tailwind config script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary_bg: 'rgba(29, 209, 0, 0.1)',
+                        primary_text: 'rgb(29, 209, 0)',
+                    },
+                    fontFamily: {
+                        Raleway: 'Raleway',
+                    },
+                    backgroundImage: {
+                        bannerImg: "url('./images/banner.png')",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-[Raleway] w-11/12 mx-auto">
+    <header>
+        <nav>
+            <!-- navbar starts -->
+            <div class="navbar bg-base-100 my-5">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-2xl font-extrabold">
+                        <i class="fa-solid fa-bus"></i>
+                        SafeWay Travels</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Destination</a></li>
+                        <li><a href="">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-xl font-bold bg-primary_bg px-6 py-3 text-primary_text">
+                        <span>Bus</span>
+                        <i class="fa-solid fa-bus "></i>
+                    </a>
+                </div>
+            </div>
+            <!-- navbar end -->
+        </nav>
+        <!-- banner section starts -->
+        <section class="">
+            <div class="bg-bannerImg bg-no-repeat bg-cover h-[600px] bg-center rounded-3xl">
+                <div class="space-y-8 pt-32">
+                    <h1 class="text-white text-6xl font-bold text-center">End-to-End Travel with <br> <span
+                            class="text-primary_text">SafeWay Travels</span></h1>
+                    <p class="text-center text-white">Yes, you can run unit tests and view the results directly within
+                        the app. The integrated testing features allow for a streamlined .</p>
+                    <div class="flex justify-center">
+                        <button class="btn bg-primary_text border-none font-bold text-xl px-5 py-1">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <!-- banner overlap -->
+            <div class="relative flex flex-col lg:flex-row justify-evenly lg:-top-20">
+                    <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
+                        <!-- image -->
+                        <div>
+                            <img src="./images/people.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div>
+                            <h1 class="text-4xl font-bold">500K+</h1>
+                            <p class="text-[rgba(3, 7, 18, 0.6)]">Registered users</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
+                        <!-- image -->
+                        <div>
+                            <img src="./images/ticket-cupon.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div>
+                            <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                            <p class="text-[rgba(3, 7, 18, 0.6)]">Tickets sold</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
+                        <!-- image -->
+                        <div>
+                            <img src="./images/stoppage.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div>
+                            <h1 class="text-4xl font-bold">80K+</h1>
+                            <p class="text-[rgba(3, 7, 18, 0.6)]">Rental partners</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- banner section ends -->
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
