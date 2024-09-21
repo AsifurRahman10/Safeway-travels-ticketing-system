@@ -24,6 +24,8 @@
                         clifford: '#da373d',
                         primary_bg: 'rgba(29, 209, 0, 0.1)',
                         primary_text: 'rgb(29, 209, 0)',
+                        coupon_one: 'rgb(255, 191, 15)',
+                        coupon_two: 'rgb(247, 140, 156)',
                     },
                     fontFamily: {
                         Raleway: 'Raleway',
@@ -37,8 +39,8 @@
     </script>
 </head>
 
-<body class="font-[Raleway] w-11/12 mx-auto">
-    <header>
+<body class="font-[Raleway]">
+    <header class="w-11/12 mx-auto">
         <nav>
             <!-- navbar starts -->
             <div class="navbar bg-base-100 my-5">
@@ -79,45 +81,147 @@
             </div>
             <!-- banner overlap -->
             <div class="relative flex flex-col lg:flex-row justify-evenly lg:-top-20">
-                    <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
-                        <!-- image -->
-                        <div>
-                            <img src="./images/people.png" alt="">
-                        </div>
-                        <!-- text -->
-                        <div>
-                            <h1 class="text-4xl font-bold">500K+</h1>
-                            <p class="text-[rgba(3, 7, 18, 0.6)]">Registered users</p>
-                        </div>
+                <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
+                    <!-- image -->
+                    <div>
+                        <img src="./images/people.png" alt="">
                     </div>
-                    <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
-                        <!-- image -->
-                        <div>
-                            <img src="./images/ticket-cupon.png" alt="">
-                        </div>
-                        <!-- text -->
-                        <div>
-                            <h1 class="text-4xl font-bold">1.7 lacks</h1>
-                            <p class="text-[rgba(3, 7, 18, 0.6)]">Tickets sold</p>
-                        </div>
+                    <!-- text -->
+                    <div>
+                        <h1 class="text-4xl font-bold">500K+</h1>
+                        <p class="text-[rgba(3, 7, 18, 0.6)]">Registered users</p>
                     </div>
-                    <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
-                        <!-- image -->
-                        <div>
-                            <img src="./images/stoppage.png" alt="">
-                        </div>
-                        <!-- text -->
-                        <div>
-                            <h1 class="text-4xl font-bold">80K+</h1>
-                            <p class="text-[rgba(3, 7, 18, 0.6)]">Rental partners</p>
-                        </div>
+                </div>
+                <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
+                    <!-- image -->
+                    <div>
+                        <img src="./images/ticket-cupon.png" alt="">
                     </div>
+                    <!-- text -->
+                    <div>
+                        <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                        <p class="text-[rgba(3, 7, 18, 0.6)]">Tickets sold</p>
+                    </div>
+                </div>
+                <div class="flex items-center border-b-2 gap-4 bg-white px-16 py-9 rounded-3xl border-b-primary_text">
+                    <!-- image -->
+                    <div>
+                        <img src="./images/stoppage.png" alt="">
+                    </div>
+                    <!-- text -->
+                    <div>
+                        <h1 class="text-4xl font-bold">80K+</h1>
+                        <p class="text-[rgba(3, 7, 18, 0.6)]">Rental partners</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- banner section ends -->
     </header>
     <main>
-
+        <!-- coupon section starts -->
+        <section class=" w-11/12 mx-auto">
+            <div>
+                <h1 class="text-4xl font-bold text-center mt-10">Best offers for you</h1>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16">
+                <!-- coupon one -->
+                <div class="bg-coupon_one flex items-center gap-5 overflow-hidden p-7 lg:p-14 rounded-3xl">
+                    <div class="w-full">
+                        <h1 class="text-4xl font-bold">15% OFF</h1>
+                        <p class="text-xl font-bold">on your next purchase</p>
+                        <p class="text-[rgba(3, 7, 18, 0.5)]">use by January 2024</p>
+                    </div>
+                    <hr class="lg:block hidden border-2 w-full border-dashed rotate-90 text-white">
+                    <div class="w-full">
+                        <h1 class="text-3xl font-bold">NEW15</h1>
+                        <p class="text-xl ">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- coupon two -->
+                <div class="bg-coupon_two flex items-center gap-5 overflow-hidden p-7 lg:p-14 rounded-3xl">
+                    <div class="w-full">
+                        <h1 class="text-4xl font-bold">20% OFF
+                        </h1>
+                        <p class="text-xl font-bold">on your next purchase
+                        </p>
+                        <p class="text-[rgba(3, 7, 18, 0.5)]">use by January 2024</p>
+                    </div>
+                    <hr class="hidden lg:block border-2 w-full border-dashed rotate-90 text-white">
+                    <div class="w-full">
+                        <h1 class="text-3xl font-bold">Couple 20</h1>
+                        <p class="text-xl ">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center my-10">
+                <button><a class="btn text-xl font-bold bg-primary_bg px-6 py-3 text-primary_text">
+                    <span>See All Offers</span>
+                    <i class="fa-solid fa-bus "></i>
+                </a></button>
+            </div>
+        </section>
+        <!-- coupon section starts -->
+         <!-- ticket status section starts -->
+          <section class="rounded-[60px] border-t-2 border-primary_text pt-20">
+            <div class="space-y-5 mb-10">
+                <h1 class="text-4xl font-bold text-center">P.H Paribahan</h1>
+                <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+            <!-- main part -->
+             <div class="grid grid-cols-1 lg:grid-cols-3 w-11/12 mx-auto overflow-hidden p-10 rounded-3xl bg-gray-100">
+                <!-- details part -->
+                <div class="col-span-2 relative z-0">
+                    <div class="flex justify-between mb-8">
+                        <div class="flex item-center gap-3">
+                            <img src="./images/bus-logo.png" alt="" class="">
+                            <div class="">
+                                <h2 class="text-3xl font-bold">SafeWay Travels</h2>
+                            <p class="text-[rgba(3, 7, 18, 0.6)]">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block">
+                            <a class="btn text-xl font-bold bg-primary_bg px-6 py-3 text-primary_text">
+                                <span>Bus</span>
+                                <i class="fa-solid fa-bus "></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl border-2 p-8 bg-slate-50">
+                        <div>
+                            <div class="flex justify-between">
+                                <p class="text-lg font-semibold text-[rgba(3, 7, 18, 0.6)]">Route</p>
+                                <p class="text-lg font-semibold">Dhaka - Sylhet</p>
+                            </div>
+                            <hr class="border-2 border-dashed">
+                        </div>
+                        <div>
+                            <div class="flex justify-between">
+                                <p class="text-lg font-semibold text-[rgba(3, 7, 18, 0.6)]">Departure Time</p>
+                                <p class="text-lg font-semibold">9:00 PM</p>
+                            </div>
+                            <hr class="border-2 border-dashed">
+                        </div>
+                        <div class="flex justify-between lg:flex-row flex-col gap-y-3 mt-3">
+                            <div class="font-medium text-[rgba(3, 7, 18, 0.8)] bg-slate-100 p-4 rounded-xl">Boarding Point - Laxmipur</div>
+                            <div class="font-medium text-[rgba(3, 7, 18, 0.8)] bg-slate-100 p-4 rounded-xl">Dropping Point - Bogura</div>
+                            <div class="font-medium text-[rgba(3, 7, 18, 0.8)] bg-slate-100 p-4 rounded-xl">Est. Time - 11 Hour</div>
+                        </div>
+                    </div>
+                    <div class="absolute -right-2/3 z-40 w-full">
+                        <hr class="rotate-90 border-2 border-dashed">
+                    </div>
+                </div>
+                <!-- fair part -->
+                <div class="flex flex-col justify-center items-center lg:ml-40 mt-10 lg:mt-0">
+                    <img src="./images/fare.png" alt="">
+                    <h2 class="text-3xl font-bold">550 Taka</h2>
+                    <p class="text-xl font-semibold text-gray-600">Per Seat</p>
+                </div>
+             </div>
+             
+          </section>
+         <!-- ticket status section ends -->
     </main>
     <footer>
 
